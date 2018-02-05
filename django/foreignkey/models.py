@@ -48,3 +48,8 @@ class Pokemon(models.Model):
 
     def __str__(self):
         return f'{self.dex_number:03}. {self.name} {self.type.name}'
+
+
+
+
+
