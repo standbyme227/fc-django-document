@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'many_to_many',
     'foreignkey',
     'myapp',
     'django.contrib.admin',
