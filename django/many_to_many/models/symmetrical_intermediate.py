@@ -37,6 +37,13 @@ class TwitterUser(models.Model):
         return following_users
 
     @property
+    def followers(self):
+        pk_list = self.relations_by_to_user.filter(
+            type=Relation.RELATION_TYPE_FOLLOWING).values_list('from_user', flat=True)
+        return TwitterUser.objects.filter(pk__in=pk_list)
+
+
+    @property
     def block_users(self):
         block_relations = self.relations_by_from_user.filter(
             type=Relation.RELATION_TYPE_BLOCK,
@@ -48,6 +55,16 @@ class TwitterUser(models.Model):
 
         # self.relations_by_from_user.filter(type=Relation.RELATION_TYPE_BLOCK).values_list('to_user', flat=True)
         # return TwitterUser.objects.filter(pk__in=pk_list)
+
+
+    def is_followee(self, to_user):
+        return self.following.filter(pk=to_user.pk).exists()
+
+
+    def is_follower(self, to_user):
+        return self.follow
+
+
 
 
     def follow(self, to_user):
