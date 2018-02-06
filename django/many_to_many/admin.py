@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Topping, Pizza, Post, User, Postlike, FacebookUser, InstagramUser
+from .models import Topping, Pizza, Post, User, Postlike, FacebookUser, InstagramUser, TwitterUser
 
 
 admin.site.register(Topping)
@@ -9,3 +9,4 @@ admin.site.register(User)
 admin.site.register(Postlike)
 admin.site.register(FacebookUser)
 admin.site.register(InstagramUser)
+admin.site.register(TwitterUser)
