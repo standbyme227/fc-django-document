@@ -81,6 +81,10 @@ class TwitterUser(models.Model):
             type=Relation.RELATION_TYPE_BLOCK,
         )
 
+    class Meta:
+        verbose_name_plural = 'sym_inter - TwitterUser'
+
+
 class Relation(models.Model):
     '''
     유저간의 관계를 정의하는 모델

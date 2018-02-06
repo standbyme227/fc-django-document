@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'one_to_one',
     'many_to_many',
     'foreignkey',
     'myapp',

@@ -20,12 +20,18 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name_plural = 'intermediate - Post'
+
 
 class User(models.Model):
     name = models.CharField(max_length=50)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name_plural = 'intermediate - User'
 
 
 class Postlike(models.Model):
@@ -42,3 +48,6 @@ class Postlike(models.Model):
                 timezone.localtimee(self.created_date),
                 '%Y.%m.%d')
         )
+
+    class Meta:
+        verbose_name_plural = 'intermediate - Postlike'
