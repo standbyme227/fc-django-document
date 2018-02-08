@@ -31,12 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'one_to_one',
-    'many_to_many',
-    'foreignkey',
+    'relations.one_to_one.apps.OneToOneConfig',
+    'relations.many_to_many.apps.ManyToManyConfig',
+    'relations.foreignkey.apps.ForeignkeyConfig',
+
     'myapp',
 
     'inheritance.abstract_base_classes',
+    'inheritance.rel.apps.RelConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
