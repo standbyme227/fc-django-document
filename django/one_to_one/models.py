@@ -24,4 +24,5 @@ class Waiter(models.Model):
     name = models.CharField(max_length=50)
 
     def __str__(self):
-        return '%s the waiter at %s' %(self.name)
+        return '%s the waiter at %s' %(self.name , self.restaurant)
+
