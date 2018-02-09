@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'inheritance.proxy.apps.ProxyConfig',
     'inheritance.custom_m.apps.CustomMConfig',
     'inheritance.proxy_manager.apps.ProxyManagerConfig',
-
+    'inheritance.multiple_inheritance.apps.MultipleInheritanceConfig',
 
     'django_extensions',
 
