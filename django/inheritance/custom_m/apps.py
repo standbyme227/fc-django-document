@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class CustomMConfig(AppConfig):
-    name = 'custom_m'
+    name = 'inheritance.custom_m'
