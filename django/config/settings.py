@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'inheritance.abstract_base_classes',
     'inheritance.rel.apps.RelConfig',
     'inheritance.multi_table.apps.MultiTableConfig',
+    'inheritance.proxy.apps.ProxyConfig',
+
 
     'django_extensions',
 
