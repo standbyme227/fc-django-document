@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'inheritance.rel.apps.RelConfig',
     'inheritance.multi_table.apps.MultiTableConfig',
 
+    'django_extensions',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
