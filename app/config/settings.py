@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'inheritance.proxy_manager.apps.ProxyManagerConfig',
     'inheritance.multiple_inheritance.apps.MultipleInheritanceConfig',
 
+    'weblog.apps.WeblogConfig',
+
     'django_extensions',
 
     'django.contrib.admin',
